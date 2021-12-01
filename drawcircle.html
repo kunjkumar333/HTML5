@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Circle Demo</title>
+</head>
+
+<body>
+    <h1>HTML5 Graphics - using&lt; Canvas&gt;</h1>
+    <canvas id="mycanvas" width="500" height="400" style="border: 1px solid" ;>
+    <script>
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(100,50,50,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(100,150,50,0,1*Math.PI);
+        ctx.fillStyle="aqua";
+        ctx.fill();
+        ctx.stroke();
+
+        //making an emoji
+        ctx.beginPath();
+        ctx.arc(300,100,50,0,2*Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(300,100,35,0,1*Math.PI);
+        ctx.fillStyle="aqua";
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(280,85,5,0,2*Math.PI);
+        ctx.fillStyle="black";
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(317,85,5,0,2*Math.PI);
+        ctx.fillStyle="black";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

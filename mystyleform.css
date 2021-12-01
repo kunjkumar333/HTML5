@@ -1,0 +1,16 @@
+
+#btn{
+    
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+  margin: 5px;
+  color: aqua;
+  background-color: brown;
+}
+#btn:hover  {
+    color:  rgb(255, 255, 255);
+    background:  rgb(10, 106, 161);
+}
+
